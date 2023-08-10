@@ -49,3 +49,6 @@ Grab your port and your password by clicking on the **show connect info** button
 And done! You can use this solution now ;). Thanks for reading!
 
 ![image](https://github.com/Emerson1337/obs-browser-preview/assets/58860863/4334581a-f785-4d4c-990b-e46a216a748a)
+
+
+**Check the video showing it working**: https://youtu.be/mKy_0UMRpeg
