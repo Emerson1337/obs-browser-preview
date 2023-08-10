@@ -6,8 +6,9 @@ You can see your OBS preview in real-time on your web browser. This solution is 
 
 I have used different operating systems, and I faced a sucking problem when I have been using Ubuntu. Do you know when you wish to share your entire screen on Discord/Slack/Zoom/Google Meet, and always you got a black screen as an option? The only way to avoid this problem is to:
 
-[] Share the app screen (Which is bad because you lose speed while working, for example, because you usually need to switch tabs and apps quickly)
-[] Apply Ubuntu X.Org server to allow you to share your entire screen (but this solution, in my case, decreases A LOT my computer performance for some unknown reason)
+[ ] Share the app screen (Which is bad because you lose speed while working, for example, because you usually need to switch tabs and apps quickly)
+
+[ ] Apply Ubuntu X.Org server to allow you to share your entire screen (but this solution, in my case, decreases A LOT my computer performance for some unknown reason)
 
 With these two problems, I noticed that I could record my entire screen using the OBS Studio software, without black screen problems. With this in mind, I thought of a way to see my OBS preview on my browser since I can't share my OBS as an app on Discord or Slack (platforms that I usually use).
 
@@ -15,7 +16,7 @@ With these two problems, I noticed that I could record my entire screen using th
 
 A good next step for this project it is:
 
-[] Make this app an OBS manager to run remotelly to perform actions from anywhere.
+[ ] Make this app an OBS manager to run remotelly to perform actions from anywhere.
 
 # **Technologies used**
 
