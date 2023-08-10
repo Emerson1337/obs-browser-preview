@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Broadcast</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+
+    {{{body}}}
+
+    <script>
+        const test = () => {
+            const socket = new WebSocket("ws://localhost:8080");
+            socket.addEventListener("open", function (event) {
+                try {
+                    setInterval(() => {
+                        socket.send("Some Data");
+                    }, 16) //60fps 1000ms/60frames
+                } catch (err) {
+                    console.log(err)
+                }
+                
+            });
+
+            socket.addEventListener("message", function (event) {
+                const imageElement = document.getElementById('image-tag');
+                imageElement.src = JSON.parse(event.data).imageEncoded;
+            });
+        };
+
+        test();
+    </script>
+
+</body>
+</html>
