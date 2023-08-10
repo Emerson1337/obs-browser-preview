@@ -16,7 +16,7 @@ With these two problems, I noticed that I could record my entire screen using th
 
 A good next step for this project is:
 
-[ ] Make this app an OBS manager to run remotely to perform actions from anywhere.
+[ ] Make this app as an OBS manager to run remotely to perform actions from anywhere.
 
 # **Technologies used**
 
