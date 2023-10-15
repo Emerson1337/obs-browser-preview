@@ -7,6 +7,9 @@ import dotenv from "dotenv";
 
 //made by @erms1337
 
+const obsUrl = `ws://127.0.0.1:${process.env.OBS_PORT}`;
+const protocols =  { protocols: "obs-websocket" };
+
 try {
   dotenv.config();
   const app = express();
@@ -20,9 +23,9 @@ try {
 
   app.get("/", async (req, res) => {
     const { obsWebSocketVersion, negotiatedRpcVersion } = await obs.connect(
-      `ws://127.0.0.1:${process.env.OBS_PORT}`,
+      obsUrl,
       process.env.OBS_PASSWORD,
-      { protocols: "obs-websocket" }
+      protocols
     );
 
     console.log(
@@ -45,7 +48,7 @@ try {
     });
 
     res.render("home", {
-      title: "Handlebars Express Demo",
+      title: "Obs Preview Broadcast",
       imageEncoded: firstScreenshot.imageData,
     });
   });
